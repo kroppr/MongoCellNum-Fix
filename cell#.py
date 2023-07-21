@@ -6,9 +6,11 @@ from pymongo import MongoClient
 
 
 
+cellColumn = 9
+
 ourArray = csv_to_arr('./clients.AutomatedSMS_ReviewRequests_Copy.csv')
 for i in range(1, len(ourArray)):
-    if re.search("[0-9]{10}", ourArray[i][9]) == None:
+    if re.search("[0-9]{10}", ourArray[i][cellColumn]) == None:
         this = ourArray[i][9]
         this = this.replace("(", "")
         this = this.replace(")", "")
