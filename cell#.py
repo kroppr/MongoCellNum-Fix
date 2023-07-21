@@ -24,7 +24,7 @@ make_csv('./clients.AutomatedSMS_ReviewRequests.csv', ourArray)
 # Outputs array with gaps between every entry. Mongo ignores empty rows, so it works
 
 
-# Small Test
+# Small Test, checks to make sure all chars in cell #'s are of type int
 
 '''
 for ele in ourArray:
