@@ -16,6 +16,6 @@ for i in range(1, len(ourArray)):
         this = this.replace(")", "")
         this = this.replace("-", "")
         this = this.replace(" ", "")
-        ourArray[i][9] = this
+        ourArray[i][cellColumn] = this
 
 make_csv('./clients.AutomatedSMS_ReviewRequests.csv', ourArray)
