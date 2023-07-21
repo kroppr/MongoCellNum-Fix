@@ -1,8 +1,8 @@
 from modules import *
 import os, csv, re, sys
-import numpy as np
-import pandas as pd
-from pymongo import MongoClient
+# import numpy as np
+# import pandas as pd
+# from pymongo import MongoClient
 
 
 # Dependant on position of data, update this as needed
