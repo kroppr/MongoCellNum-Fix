@@ -5,7 +5,7 @@ import pandas as pd
 from pymongo import MongoClient
 
 
-
+# Dependant on position of data, update this as needed
 cellColumn = 9
 
 
@@ -20,3 +20,5 @@ for i in range(1, len(ourArray)):
         ourArray[i][cellColumn] = this
 
 make_csv('./clients.AutomatedSMS_ReviewRequests.csv', ourArray)
+
+# Outputs array with gaps between every entry. Mongo ignores empty rows, so it works
